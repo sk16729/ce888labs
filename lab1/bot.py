@@ -2,8 +2,9 @@ from sopel import module
 from emo.wdemotions import EmotionDetector
 
 emo = EmotionDetector()
-triggerlist ={}
-countlist={}
+
+triggerlist =[]
+countlist=[]
 
 
 @module.rule('')
