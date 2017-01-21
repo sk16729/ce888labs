@@ -13,7 +13,7 @@ def hi(bot, trigger):
 	
     bot.say('Hi, ' + trigger.nick)
 	
-	count = emo.detect_emotuion_in_row(str(trigger))
+	count = emo.detect_emotion_in_row(str(trigger))
 	triggerlist.add(trigger)
 	countlist.add(count)
 	average=count/triggerlist.size()
