@@ -18,16 +18,24 @@ batch_size = 32
 
 print('Loading data...')
 (X_train, y_train), (X_test, y_test) = imdb.load_data(nb_words=max_features)
-print(len(X_train), 'train sequences')
-print(len(X_test), 'test sequences')
+#print(len(X_train), 'train sequences')
+#print(len(X_test), 'test sequences')
 
+print('@@@@@@@@@@@@@@@@@@@@@@@@@')
+print('y_train: \n',y_train)
+print('length ytrain: ', len(y_train))
+print('y_test: \n',y_test)
+print('length ytest: ', len(y_test))
+print('@@@@@@@@@@@@@@@@@@@@@@@@@')
 print (X_train[0])
 
 print('Pad sequences (samples x time)')
 X_train = sequence.pad_sequences(X_train, maxlen=maxlen)
 X_test = sequence.pad_sequences(X_test, maxlen=maxlen)
-print('X_train shape:', X_train.shape)
-print('X_test shape:', X_test.shape)
+#print('X_train shape:', X_train.shape)
+#print('X_train', X_train)
+#print('X_test shape:', X_test.shape)
+#print('X_test',X_test)
 
 print('Build model...')
 
