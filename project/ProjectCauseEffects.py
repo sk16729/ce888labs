@@ -1,6 +1,5 @@
 from __future__ import print_function
 import numpy as np
-import matplotlib.pyplot as plt
 import glob
 import pandas as pd
 from keras.layers.advanced_activations import PReLU
